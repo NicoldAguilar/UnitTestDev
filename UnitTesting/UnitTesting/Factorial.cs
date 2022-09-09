@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ejercicio1
+{
+    public class Factorial
+    {
+        //Dado un númeo, retornar el factorial       
+
+        public int ObtenerFactorial(int n)
+        {
+            return 0;
+        }
+        
+    }
+}
