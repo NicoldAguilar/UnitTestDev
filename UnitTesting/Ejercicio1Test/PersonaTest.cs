@@ -21,9 +21,25 @@ namespace Ejercicio1Test
                 new Persona{Nombre = "Juan", Edad = 15},
             };
 
-            var helper = new PersonaHelper();
-            var result = helper.ObtenerAlMayor(personas);
+            var helper = new PersonaHelper(personas);
+            var result = helper.ObtenerAlMayor();
             Assert.AreEqual("Maria", result.Nombre);
+        }
+
+        [Test]
+        public void QuienEsElMayorCaso02()
+        {
+            //Crear personas
+            var personas = new List<Persona>
+            {
+                new Persona{Nombre = "Luis", Edad = 12},
+                new Persona{Nombre = "Maria", Edad = 1},
+                new Persona{Nombre = "Juan", Edad = 15},
+            };
+
+            var helper = new PersonaHelper(personas);
+            var result = helper.ObtenerAlMayor();
+            Assert.AreEqual("Juan", result.Nombre);
         }
     }
 }

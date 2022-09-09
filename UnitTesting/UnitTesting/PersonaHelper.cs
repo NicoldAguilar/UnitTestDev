@@ -8,9 +8,15 @@ namespace Ejercicio1
 {
     public class PersonaHelper
     {
-        public Persona ObtenerAlMayor(List<Persona> personas)
+        private List<Persona> Personas;
+
+        public PersonaHelper(List<Persona> personas)
         {
-            return new Persona();
+            this.Personas = personas;
+        }
+        public Persona ObtenerAlMayor()
+        {
+            return Personas.First(o => o.Edad == Personas.Max(x => x.Edad));
         }
     }
 }
